@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>PHP Currency Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>PHP Currency Calculator</h1>
+        <h3>Please Enter your name:</h3>
+        <input type="text" ng-model="name">
+        <h4>Hi {{name | uppercase}}! Welcome to the PHP Currency Calculator! </h4>
+    </div>
+
+    <div ng-app>
+        <label>Value 1:</label>
+        <input type="number" ng-model="num1">
+        <label>Value 2:</label>
+        <input type="number" ng-model="num2">
+        <p>Total is: {{num1 + num2 | currency:"PHP"}}</p>
+    </div>
+</body>
+</html>
